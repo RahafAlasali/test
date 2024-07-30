@@ -1,0 +1,11 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+$body-color: #333;
+$body-bg: #fff;
+// Required
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+$primary: #e7c969;
+$theme-colors: (
+    "primary": $primary)

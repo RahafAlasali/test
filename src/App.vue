@@ -1,32 +1,29 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+  <div style="background-color: black; color: #fff !important">
+    <div id="app" class="">
+      <router-view />
+    </div>
   </div>
 </template>
 
+<script>
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@font-face {
+  font-family: "Marcellus";
+  src: url("@/assets/font/Marcellus/MarcellusRegular.ttf");
 }
-
-nav {
-  padding: 30px;
+@font-face {
+  font-family: "RobotoFlexRegular";
+  src: url("@/assets/font/Roboto_Flex/static/RobotoFlex-Regular.ttf");
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+@font-face {
+  font-family: "RobotoFlex";
+  src: url("@/assets/font/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf");
 }
-
-nav a.router-link-exact-active {
-  color: #42b983;
+body {
+  font-family: "RobotoFlexRegular" !important;
 }
 </style>
+
