@@ -1,10 +1,10 @@
 <template>
-  <div class="container">
-    <Header />
-    <Products title="Latest products" :products="products" />
+  <div>
+    <Header class="container" />
+    <Products title="Latest products" :products="products" class="container" />
     <sctions-collection />
-    <Categoris :categoies="data" />
-    <Footer />
+    <Categoris :categoies="data" class="container" />
+    <Footer class="container" />
   </div>
 </template>
 
@@ -26,10 +26,22 @@ export default {
     return {
       products: [
         {
-          id: "5",
-          title: "Title",
-          price: "150",
-          image: "@/assets/imgs/headphones.jpg",
+          id: "1", //
+          title: "Headphone",
+          price: "180",
+          image: "headphones.jpg",
+        },
+        {
+          id: "2",
+          title: "Necklace",
+          price: "50",
+          image: "necklace-jewelry.jpg",
+        },
+        {
+          id: "3",
+          title: "Home Appliances",
+          price: "250",
+          image: "background.jpg",
         },
       ],
       data: [],

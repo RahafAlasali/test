@@ -5,6 +5,7 @@
       id="carouselExampleIndicators"
       class="carousel slide"
       data-bs-ride="carousel"
+      style="height: 550px"
     >
       <div class="carousel-indicators">
         <button
@@ -28,7 +29,11 @@
           aria-label="Slide 3"
         ></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner position-relative">
+        <div
+          class="position-absolute w-100 h-100 top-0 right-0"
+          style="z-index: 9999999; background-color: #000000a1"
+        ></div>
         <div class="carousel-item active">
           <img
             src="@/assets/imgs/Header1.jpg"

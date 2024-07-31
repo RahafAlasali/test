@@ -12,6 +12,7 @@
       id="carouselExampleIndicators"
       class="carousel slide"
       data-bs-ride="carousel"
+      style="height: 450px"
     >
       <div class="carousel-indicators">
         <button

@@ -2,7 +2,10 @@
   <div class="container py-5">
     <table class="table text-white">
       <thead>
-        <tr class="text-center">
+        <tr
+          class="text-center color-primary"
+          style="font-family: 'Marcellus'; font-size: x-large"
+        >
           <th scope="col"></th>
           <th scope="col">Image</th>
           <th scope="col">Title</th>
@@ -13,7 +16,7 @@
       <tbody class="text-center">
         <tr v-for="(item, index) in cart" :key="index">
           <td>
-            <i class="bi bi-x-circle" @click="remove(item)"> </i>
+            <i class="bi bi-x-circle color-primary" @click="remove(item)"> </i>
           </td>
           <td scope="row">
             <img
