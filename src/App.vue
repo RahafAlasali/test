@@ -1,7 +1,7 @@
 <template>
   <div style="background-color: black; color: #fff !important">
     <div id="app" class="">
-      <router-view />
+      <router-view :key="$route.path" />
     </div>
   </div>
 </template>
@@ -33,6 +33,20 @@ body {
 
 .color-primary {
   color: #e7c969;
+}
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #121212;
+  border-radius: 2px;
 }
 </style>
 

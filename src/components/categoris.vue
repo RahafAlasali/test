@@ -16,7 +16,7 @@
           <div
             v-for="(cat, index) in $props.categoies"
             :key="index"
-            class="col-md-3 col-12 mb-2"
+            class="col-md-3 col-6 mb-2"
           >
             <router-link :to="`/productCat/${cat}`" class="text-white">
               <!-- to:{name:"" , param:""} -->

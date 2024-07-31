@@ -5,9 +5,8 @@
       id="carouselExampleIndicators"
       class="carousel slide"
       data-bs-ride="carousel"
-      style="height: 550px"
     >
-      <div class="carousel-indicators">
+      <div class="carousel-indicators" style="z-index: 99999">
         <button
           type="button"
           data-bs-target="#carouselExampleIndicators"
@@ -29,10 +28,10 @@
           aria-label="Slide 3"
         ></button>
       </div>
-      <div class="carousel-inner position-relative">
+      <div class="carousel-inner" style="padding-bottom: 50px">
         <div
           class="position-absolute w-100 h-100 top-0 right-0"
-          style="z-index: 9999999; background-color: #000000a1"
+          style="z-index: 9; background-color: #000000a1"
         ></div>
         <div class="carousel-item active">
           <img

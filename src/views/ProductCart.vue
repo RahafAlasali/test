@@ -16,7 +16,8 @@
       <tbody class="text-center">
         <tr v-for="(item, index) in cart" :key="index">
           <td>
-            <i class="bi bi-x-circle color-primary" @click="remove(item)"> </i>
+            <i class="bi bi-x-circle color-primary h3" @click="remove(item)">
+            </i>
           </td>
           <td scope="row">
             <img

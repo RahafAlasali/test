@@ -4,39 +4,37 @@
       <div
         class="container d-flex justify-content-spacebettwen align-items-end"
       >
-        <img src="@/assets/imgs/logo.png" width="150" height="100" alt="..." />
-        <div>
+        <img
+          src="@/assets/imgs/logo.png"
+          width="150"
+          height="100"
+          alt="..."
+          class="d-none d-sm-block"
+        />
+        <div class="">
           <div class="d-flex justify-content-end mb-1">
-            <a href="" class="mx-2">
-              <img
-                src="@/assets/icons/instagram_Gold.png"
-                alt=""
-                width="20"
-                height="20"
-            /></a>
-            <a href="" class="mx-2">
-              <img
-                src="@/assets/icons/facebook_Gold.png"
-                alt=""
-                width="20"
-                height="20"
-            /></a>
-            <a href="" class="mx-2">
-              <img
-                src="@/assets/icons/Twitter.png"
-                alt=""
-                width="20"
-                height="20"
-            /></a>
-            <a href="" class="mx-2">
-              <img
-                src="@/assets/icons/Youtube.png"
-                alt=""
-                width="20"
-                height="20"
-            /></a>
+            <div class="d-block d-sm-none">
+              <i
+                class="bi bi-x-circle color-primary h2"
+                @click="drawer = !drawer"
+              ></i>
+            </div>
+            <div class="d-none d-sm-block">
+              <a
+                href=""
+                class="mx-2"
+                v-for="(icon, index) in icons"
+                :key="index"
+              >
+                <img
+                  :src="require(`@/assets/icons/${icon.icon}`)"
+                  alt=""
+                  width="20"
+                  height="20"
+              /></a>
+            </div>
           </div>
-          <div class="pt-2">
+          <div class="pt-2 d-none d-sm-block">
             <ul class="links">
               <router-link
                 v-for="(t, index) in links"
@@ -49,6 +47,25 @@
               </router-link>
             </ul>
           </div>
+          <div
+            v-if="drawer"
+            class="bg-color-primary"
+            style="height: 100vh; width: 100vw"
+          >
+            <div
+              v-for="(t, index) in links"
+              :key="index"
+              class="text-center py-2"
+            >
+              <router-link
+                :to="t.link"
+                class="mx-1 px-1"
+                style="color: #ffff; font-family: 'Marcellus'"
+              >
+                {{ t.title }}
+              </router-link>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -60,15 +77,22 @@ export default {
   name: "Navbar",
   data() {
     return {
+      drawer: false,
       links: [
         { title: "Home", link: "/" },
         { title: "Cart", link: "/cart" },
-        { title: "Elictronics", link: "" },
-        { title: "Jewelry", link: "" },
-        { title: "Men Closthing", link: "" },
-        { title: "Woman Closthing", link: "" },
-        { title: "Media Center", link: "" },
-        { title: "Contact us", link: "" },
+        { title: "Elictronics", link: "/productCat/electronics" },
+        { title: "Jewelery", link: "/productCat/jewelery" },
+        { title: "Men Closthing", link: "/productCat/men's clothing" },
+        { title: "Woman Closthing", link: "/productCat/women's clothing" },
+        { title: "Media Center", link: "/productCat/" },
+        { title: "Contact us", link: "/productCat/" },
+      ],
+      icons: [
+        { icon: "instagram_Gold.png", link: "" },
+        { icon: "facebook_Gold.png", link: "" },
+        { icon: "Twitter.png", link: "" },
+        { icon: "Youtube.png", link: "" },
       ],
     };
   },

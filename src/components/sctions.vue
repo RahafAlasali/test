@@ -2,18 +2,15 @@
   <div class="py-4 position-relative" style="z-index: 88888888">
     <div
       class="text-uppercase py-3 text-dark bg-color-primary position-absolute"
-      style="width: 100%; top: 20%; z-index: -1; min-width: 100vw"
+      style="width: 100%; top: 20%; z-index: -1"
     >
-      <div
-        class="text-center fw-bold container-fluid"
-        style="font-size: larger"
-      >
+      <div class="text-center fw-bold" style="font-size: larger">
         Luxury jewelry collection
       </div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-5">
           <img
             class="img-fluid"
             src="@/assets/imgs/portrait-young-woman-with-earrings-with-gems-isolated.jpg"

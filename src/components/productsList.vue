@@ -12,9 +12,8 @@
       id="carouselExampleIndicators"
       class="carousel slide"
       data-bs-ride="carousel"
-      style="height: 450px"
     >
-      <div class="carousel-indicators">
+      <div class="carousel-indicators pt-2">
         <button
           type="button"
           data-bs-target="#carouselExampleIndicators"
@@ -36,25 +35,14 @@
           aria-label="Slide 3"
         ></button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row pt-2">
-            <product-item
-              v-for="(prd, index) in $props.products"
-              :key="index"
-              :product="prd"
-              class="col-10 col-md-4"
-            />
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row pt-2">
-            <product-item
-              v-for="(prd, index) in $props.products"
-              :key="index"
-              :product="prd"
-              class="col-10 col-md-4"
-            />
+      <div class="carousel-inner row" style="padding-bottom: 50px">
+        <div
+          class="col-10 col-md-4"
+          v-for="(prd, index) in $props.products"
+          :key="index"
+        >
+          <div class="pt-2 carousel-item" :class="{ active: index < 3 }">
+            <product-item :product="prd" />
           </div>
         </div>
       </div>

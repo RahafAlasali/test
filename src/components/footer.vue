@@ -1,17 +1,12 @@
 <template>
-  <div class="container">
+  <div>
     <footer class="pb-1">
       <hr class="bg-color-primary" style="height: 4px" />
       <section class="" style="font-family: 'Marcellus'">
         <div class="text-md-start mt-3">
-          <div class="row mt-3">
-            <div class="col-md-5 col-lg-4 col-xl-3 mb-4">
-              <img
-                src="@/assets/imgs/logo.png"
-                width="300"
-                height="200"
-                class=""
-              />
+          <div class="row mt-3 mx-2">
+            <div class="col-md-3 col-lg-4 col-xl-3 col-6 mb-4">
+              <img src="@/assets/imgs/logo.png" height="200" class="w-100" />
               <div class="d-flex justify-content-center">
                 <div v-for="(d, index) in data" :key="index">
                   <a href="i.link" class="mx-2">
