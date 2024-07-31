@@ -1,15 +1,9 @@
 <template>
   <div class="py-4">
-    <div
-      class="text-uppercase py-3 text-dark"
-      style="background-color: #e7c969"
-    >
+    <div class="text-uppercase py-3 text-dark bg-color-primary">
       <div class="row">
         <div class="col-6"></div>
-        <div
-          class="col-6 text-center"
-          style="font-weight: bold; font-size: larger"
-        >
+        <div class="col-6 text-center fw-bold" style="font-size: larger">
           Luxury jewelry collection
         </div>
       </div>
@@ -34,7 +28,8 @@
         <div class="d-grid col-6 mt-5">
           <button
             type="button"
-            class="btn btn-outline-light btn-lg text-uppercase"
+            class="btn btn-outline-light btn-lg text-uppercase rounded-0"
+            style="border-color: #e7c969"
           >
             more
           </button>
@@ -43,4 +38,3 @@
     </div>
   </div>
 </template>
-<!-- e7c96a -->

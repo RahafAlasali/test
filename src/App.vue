@@ -25,5 +25,14 @@
 body {
   font-family: "RobotoFlexRegular" !important;
 }
+
+/* edit in scss thiem promary */
+.bg-color-primary {
+  background-color: #e7c969;
+}
+
+.color-primary {
+  color: #e7c969;
+}
 </style>
 

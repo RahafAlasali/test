@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <footer class="pb-1">
-      <hr style="background-color: #e7c969; height: 4px" />
+      <hr class="bg-color-primary" style="height: 4px" />
       <section class="" style="font-family: 'Marcellus'">
         <div class="text-md-start mt-3">
           <div class="row mt-3">
@@ -46,7 +46,7 @@
               </p>
             </div>
 
-            <div class="col-4 col-md-2 mx-auto mt-4" style="color: #e7c969">
+            <div class="col-4 col-md-2 mx-auto mt-4 color-primary">
               <p>
                 <a href="#!" class="text-reset">Elictronics</a>
               </p>
@@ -61,10 +61,7 @@
               </p>
             </div>
 
-            <div
-              class="col-4 col-md-2 mx-auto mb-md-0 mt-4"
-              style="color: #e7c969"
-            >
+            <div class="col-4 col-md-2 mx-auto mb-md-0 mt-4 color-primary">
               <p class="text-white" style="font-size: x-large">Contact us</p>
               <p>+971 45 567 488</p>
               <p>+971 23 567 789</p>

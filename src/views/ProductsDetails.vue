@@ -40,7 +40,7 @@ export default {
   methods: {
     ...mapActions("cart", ["addProductToCart"]),
     add(item) {
-      this.addProductToCart({ item });
+      this.addProductToCart({ item, quantity: 1 });
     },
   },
   computed: {

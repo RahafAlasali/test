@@ -1,20 +1,14 @@
 <template>
-  <div class="img-background" style="position: relative">
+  <div class="img-background position-relative">
     <div
-      class="d-flex align-items-center"
-      style="
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        background-color: #000000c4;
-        position: absolute;
-      "
+      class="d-flex align-items-center position-absolute w-100 h-100 top-0 right-0"
+      style="background-color: #000000c4"
     >
       <div class="row container mx-0">
         <h2
-          class="text-uppercase mb-5 text-center"
-          style="color: #e7c969; font-family: 'Marcellus'; font-size: xxx-large"
+          class="text-uppercase mb-5 text-center color-primary"
+          style="font-family: 'Marcellus'; font-size: xxx-large"
+          data-aos="fade-down"
         >
           Categoris
         </h2>
@@ -26,14 +20,16 @@
           <router-link :to="`/productCat/${cat}`" class="text-white">
             <!-- to:{name:"" , param:""} -->
             <div
-              class="text-uppercase d-flex align-items-center justify-content-center text-white"
+              class="bg-color-primary text-uppercase d-flex align-items-center justify-content-center text-white"
               style="
-                background-color: #e7c969;
                 height: 130px;
                 opacity: 0.7;
                 font-family: 'Marcellus';
                 font-size: x-large;
               "
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
             >
               {{ cat }}
             </div>

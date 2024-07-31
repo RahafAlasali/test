@@ -10,7 +10,7 @@
           style="object-fit: contain"
         />
         <div class="card-img-overlay">
-          <i class="bi bi-heart" style="color: #e7c969"></i>
+          <i class="bi bi-heart color-primary"></i>
         </div>
       </div>
       <div class="card-body text-center">
@@ -21,9 +21,10 @@
         <div class="d-grid col-8 mx-auto mt-3 text-center">
           <button
             type="button"
-            class="btn btn-outline-light btn-sm text-uppercase"
+            class="btn btn-outline-light btn-sm text-uppercase rounded-0"
+            style="border-color: #e7c969"
             @click="
-              $router.push({ name: 'productDetailes', params: { id: '2' } })
+              $router.push({ name: 'productDetailes', params: { id: item.id } })
             "
           >
             see more
