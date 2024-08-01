@@ -1,6 +1,14 @@
 <template>
   <div>
     <nav class="navbar" style="border-bottom: solid 15px #e7c969">
+      <div class="d-flex justify-content-end">
+        <div class="d-block d-sm-none">
+          <i
+            class="bi bi-x-circle color-primary h2"
+            @click="drawer = !drawer"
+          ></i>
+        </div>
+      </div>
       <div
         class="container d-flex justify-content-spacebettwen align-items-end"
       >
@@ -13,12 +21,6 @@
         />
         <div class="">
           <div class="d-flex justify-content-end mb-1">
-            <div class="d-block d-sm-none">
-              <i
-                class="bi bi-x-circle color-primary h2"
-                @click="drawer = !drawer"
-              ></i>
-            </div>
             <div class="d-none d-sm-block">
               <a
                 href=""
@@ -59,8 +61,8 @@
             >
               <router-link
                 :to="t.link"
-                class="mx-1 px-1"
-                style="color: #ffff; font-family: 'Marcellus'"
+                class="mx-1 px-1 text-white"
+                style="font-family: 'Marcellus '; font-size: x-large"
               >
                 {{ t.title }}
               </router-link>

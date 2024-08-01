@@ -18,8 +18,10 @@
             :key="index"
             class="col-md-3 col-6 mb-2"
           >
-            <router-link :to="`/productCat/${cat}`" class="text-white">
-              <!-- to:{name:"" , param:""} -->
+            <router-link
+              :to="{ name: 'productCat', params: { cat: cat } }"
+              class="text-white"
+            >
               <div
                 class="bg-color-primary text-uppercase d-flex align-items-center justify-content-center text-white"
                 style="
@@ -43,7 +45,10 @@
 </template>
 
 <script>
+import router from "@/router";
+
 export default {
+  name: "categoried",
   props: ["categoies"],
   data() {
     return {};

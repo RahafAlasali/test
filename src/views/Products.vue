@@ -8,6 +8,7 @@
 import axios from "axios";
 import Products from "@/components/productsList.vue";
 export default {
+  name: "prdView",
   components: {
     Products,
   },

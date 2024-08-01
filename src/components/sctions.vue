@@ -21,7 +21,7 @@
         </div>
         <div class="col-12 col-md-6 d-flex align-items-end pb-3">
           <div>
-            <div class="mt-4" data-aos="fade-left" data-aos-duration="800">
+            <div class="mt-4" data-aos="fade-bottom" data-aos-duration="800">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
               consequuntur, et voluptatem illo totam eum cum ut dignissimos
               ducimus maxime aut repellendus incidunt sunt commodi soluta ipsum.

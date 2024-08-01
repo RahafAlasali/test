@@ -80,11 +80,17 @@
 .carousel-indicators button {
   background: #e7c969 !important;
   border-radius: 50% !important;
-  width: 25px !important;
+  width: 12px !important;
+  height: 12px !important;
 }
 .carousel-indicators .active {
   background: #e7c969 !important;
   border-radius: 50% !important;
-  width: 25px !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+.carousel-indicators [data-bs-target] {
+  border: 0px solid transparent !important ;
+  opacity: 1 !important;
 }
 </style>

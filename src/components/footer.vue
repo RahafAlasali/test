@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <footer class="pb-1">
       <hr class="bg-color-primary" style="height: 4px" />
       <section class="" style="font-family: 'Marcellus'">
@@ -23,7 +23,7 @@
             <div class="col-4 col-md-2 mx-auto mt-4" style="color: #e7c969">
               <p>
                 <router-link
-                  to="/"
+                  :to="{ name: 'home' }"
                   exact
                   class="text-white"
                   style="font-size: x-large"
@@ -75,6 +75,7 @@
 
 <script>
 export default {
+  name: "footer",
   data() {
     return {
       data: [
