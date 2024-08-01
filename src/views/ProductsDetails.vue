@@ -2,7 +2,6 @@
   <div class="container py-4">
     <div class="row mt-4">
       <div class="col-md-5 col-12 px-3">
-        <!-- <img :src="product.title" alt="" /> -->
         <img :src="product.image" alt="" width="300" height="300" />
       </div>
       <div class="col-md-7 col-12 mt-3">

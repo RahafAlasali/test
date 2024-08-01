@@ -11,21 +11,18 @@
       <carousel
         class="container"
         :per-page="3"
-        :navigate-to="someLocalProperty"
         :mouse-drag="false"
         :paginationPadding="2"
         paginationColor="#e7c969"
         paginationActiveColor="#e7c969"
       >
-        <!-- <div> -->
         <slide
           v-for="(prd, index) in $props.products"
           :key="index"
-          class="col-4 px-1"
+          class="col-md-4 px-1 col-12"
         >
           <product-item :product="prd"
         /></slide>
-        <!-- </div> -->
       </carousel>
     </div>
   </div>

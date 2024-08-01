@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <Products title="products" :products="data" />
+    <div v-if="data.length == 0" style="min-height: 500px"></div>
   </div>
 </template>
 

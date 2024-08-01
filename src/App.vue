@@ -35,12 +35,13 @@ body {
   color: #e7c969;
 }
 ::-webkit-scrollbar {
-  width: 9px;
+  width: 6px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f9f9f9;
+  width: 6px;
 }
 
 /* Handle */

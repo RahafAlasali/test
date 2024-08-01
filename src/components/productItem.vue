@@ -23,7 +23,10 @@
         </div>
       </div>
       <div class="card-body text-center">
-        <h5 class="card-title" style="font-family: 'Marcellus'">
+        <h5
+          class="card-title"
+          style="font-family: 'Marcellus'; font-size: medium"
+        >
           {{ item.title }}
         </h5>
         <p class="card-text color-primary">{{ item.price }}</p>

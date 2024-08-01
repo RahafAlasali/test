@@ -14,12 +14,11 @@
       >
         <img
           src="@/assets/imgs/logo.png"
-          width="150"
           height="100"
           alt="..."
-          class="d-none d-sm-block"
+          class="d-none d-sm-block col-2"
         />
-        <div class="">
+        <div class="col-md-9 pt-1 offset-md-1">
           <div class="d-flex justify-content-end mb-1">
             <div class="d-none d-sm-block">
               <a
