@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Layout from '@/layout/index.vue'
 
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -31,7 +32,8 @@ const routes = [
         component: () => import('../views/ProductCart.vue')
       }
     ]
-  },
+  }, { path: "*", component: () => import('@/views/404Page.vue') }
+
 
 ]
 
