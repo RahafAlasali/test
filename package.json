@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "predeploy": "npm run build",
+    "deploy": "cd dist && copy index.html 404.html && cd .. && gh-pages -d dist"
   },
   "dependencies": {
     "aos": "^2.3.4",
