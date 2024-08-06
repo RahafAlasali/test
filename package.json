@@ -1,12 +1,13 @@
 {
   "name": "test",
+  "homepage": "https://rahafalasali.github.io/test",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "predeploy": "npm run build",
-    "deploy": "cd dist && copy index.html 404.html && cd .. && gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "aos": "^2.3.4",
@@ -24,6 +25,7 @@
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "gh-pages": "^6.1.1",
     "sass": "^1.77.8",
     "sass-loader": "^16.0.0",
     "vue-template-compiler": "^2.6.14",
