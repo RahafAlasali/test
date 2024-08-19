@@ -34,6 +34,7 @@ body {
 .color-primary {
   color: #e7c969;
 }
+
 ::-webkit-scrollbar {
   width: 6px;
 }
